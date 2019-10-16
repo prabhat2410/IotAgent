@@ -45,6 +45,3 @@ spec:
         ports:
         - containerPort: 4041
         - containerPort: 7896
-        
-        
-        IOTA_MONGO_HOST
