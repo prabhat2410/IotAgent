@@ -33,7 +33,7 @@ spec:
           value: mongodb
         - name: IOTA_MONGO_REPLICASET
           value: rs0
-        image: ${HOST_IMAGE}:5000/fiware-iot-agent:latest 
+        image: ${HOST_IMAGE}/fiware-iot-agent:latest 
         name: fiware-iot-agent
         resources:
          limits:
