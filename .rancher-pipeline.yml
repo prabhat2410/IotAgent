@@ -1,0 +1,11 @@
+stages:
+- name: deploy yaml
+  steps:
+  - applyYamlConfig:
+      path: ./IoT-Agent-Deployment.yml
+  - applyYamlConfig:
+      path: ./IoT-Agent-service.yml
+  - applyYamlConfig:
+      path: ./Ingress.yml.txt
+timeout: 60
+notification: {}
