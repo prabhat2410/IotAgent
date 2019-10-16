@@ -3,6 +3,8 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./IoT-Agent-Deployment.yml
+    env:
+      HOST_IMAGE: csp2-centos-4
   - applyYamlConfig:
       path: ./IoT-Agent-service.yml
   - applyYamlConfig:
