@@ -33,7 +33,9 @@ stages:
         - push
   - runScriptConfig:
       image: python:latest
-      shellScript: "apt-get update\napt-get install sshpass\nsshpass -p test ssh -tt
-        -o StrictHostKeyChecking=no test@192.168.100.117 "
+      shellScript: |-
+        apt-get update
+        apt-get install sshpass
+        sshpass -p test ssh -tt -o StrictHostKeyChecking=no test@192.168.100.117 ./unit_test_iot.sh
 timeout: 60
 notification: {}
