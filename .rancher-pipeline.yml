@@ -36,6 +36,6 @@ stages:
       shellScript: |-
         apt-get update
         apt-get install sshpass
-        sshpass -p test ssh -tt -o StrictHostKeyChecking=no test@192.168.100.117 ./unit_test_iot.sh
+        sshpass -p Nec@12345 ssh -tt -o StrictHostKeyChecking=no test@192.168.100.171 ./unit_test_iot.sh
 timeout: 60
 notification: {}
